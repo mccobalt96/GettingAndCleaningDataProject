@@ -1,9 +1,11 @@
 # GettingAndCleaningDataProject
+
 ##Final project for the Getting and Cleaning Data course
 
-###This is the course project for the Getting and Cleaning Data Coursera course.
+This is the course project for the Getting and Cleaning Data Coursera course.
 
-###The R script, `run_analysis.R`, does the following:
+The R script, `run_analysis.R`, does the following:
+
 * Load data from the X_test.txt file which contains 2947 observations and 561 variables.
 * Read in the feature info file.
 * Eliminate special characters in the feature listing.
