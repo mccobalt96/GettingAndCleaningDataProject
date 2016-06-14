@@ -4,15 +4,18 @@ Final project for the Getting and Cleaning Data course
 This is the course project for the Getting and Cleaning Data Coursera course.
 
 The R script, `run_analysis.R`, does the following:
-
-2. Load the activity and feature info
-3. Loads both the training and test datasets, keeping only those columns which
-   reflect a mean or standard deviation
-4. Loads the activity and subject data for each dataset, and merges those
-   columns with the dataset
-5. Merges the two datasets
-6. Converts the `activity` and `subject` columns into factors
-7. Creates a tidy dataset that consists of the average (mean) value of each
-   variable for each subject and activity pair.
+1.  Load data from the X_test.txt file which contains 2947 observations and 561 variables.
+2.  Read in the feature info file.
+3.  Eliminate special characters in the feature listing.
+4.  Rename columns to meaningful names based on the feature listing.
+5.  Read in the Y_test.txt file for activity information.
+6.  Load data from the X_train.txt file which contains 7352 observations and 561 variables.
+7.  Rename columns to meaningful names based on the feature listing.
+8.  Read in the Y_train.txt file for activity information.
+9.  Load the subject test & train data.
+10.  Add the SubjectID's and ActivityIDs to the test and train data frames.
+11.  Merge the test and train data frames.
+12.  Use reshape2 / melt / dcast to compute means for the variables.
+13.  Create a tidy dataset.
 
 The end result is shown in the file `tidy.txt`.
